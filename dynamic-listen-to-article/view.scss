@@ -1,0 +1,68 @@
+.audio-slider-range {
+
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+
+	/* creating a custom design */
+	width: 100%;
+	cursor: pointer;
+	outline: none;
+
+	/*  slider progress trick  */
+	overflow: hidden;
+	height: 7px;
+	border-radius: 32px;
+}
+
+/* Track: webkit browsers */
+.audio-slider-range::-webkit-slider-runnable-track {
+	height: 7px;
+	background: var(--bg-tertiary);
+	border-radius: 16px;
+}
+
+/* Track: Mozilla Firefox */
+.audio-slider-range::-moz-range-track {
+	height: 7px;
+	background: var(--bg-tertiary);
+	border-radius: 16px;
+}
+
+/* Thumb: webkit */
+.audio-slider-range::-webkit-slider-thumb {
+
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+
+	/* creating a custom design */
+	height: 7px;
+	width: 7px;
+	background-color: var(--fg-primary);
+	border-radius: 50%;
+	border: 2px solid var(--fg-primary);
+
+	/*  slider progress trick  */
+	box-shadow: -1007px 0 0 1002px var(--fg-primary);
+}
+
+
+/* Thumb: Firefox */
+.audio-slider-range::-moz-range-thumb {
+	height: 7px;
+	width: 7px;
+	background-color: var(--fg-primary);
+	border-radius: 50%;
+	border: 1px solid var(--fg-primary);
+
+	/*  slider progress trick  */
+	box-shadow: -1007px 0 0 1002px var(--fg-primary);
+}
+
+.play-icon,
+.pause-icon {
+	svg {
+		fill: currentcolor;
+	}
+}

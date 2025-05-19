@@ -1,0 +1,21 @@
+@import "../../assets/scss/from_theme";
+
+.itm-posts {
+	display: grid;
+	gap: rem(32);
+
+	@include min(md) {
+		gap: rem(20);
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&--one-row {
+		grid-template-rows: 1fr 0;
+		overflow: hidden;
+	}
+
+	&.alignfull {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}

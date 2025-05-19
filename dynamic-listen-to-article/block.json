@@ -1,0 +1,43 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"version": "1.0.0",
+	"name": "moniify/dynamic-listen-to-article",
+	"title": "dynamic-listen-to-article",
+	"category": "moniify-blocks",
+	"icon": "audio",
+	"description": "Block for dynamic rendering of listen to audio player",
+	"keywords": [
+		"audio",
+		"listen",
+		"episode"
+	],
+	"textdomain": "moniify",
+	"supports": {
+		"customClassName": true,
+		"html": true,
+		"anchor": false
+	},
+	"attributes": {
+		"audioTitle": {
+			"type": "string"
+		},
+		"audioUrl": {
+			"type": "string"
+		},
+		"estimatedTime": {
+			"type": "string"
+		},
+		"audioSource": {
+			"type": "string",
+			"default": "upload"
+		}
+	},
+	"script": "file:./script.js",
+	"editorScript": "file:./editor.js",
+	"style": "file:./script.css",
+	"editorStyle": "file:./editor.css",
+	"viewScript": "file:./view.js",
+	"viewStyle": "file:./view.css",
+	"render": "file:./template.php"
+}

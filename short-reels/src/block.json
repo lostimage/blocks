@@ -1,0 +1,73 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "short-reels/short-reels",
+	"version": "0.1.0",
+	"title": "Shorts",
+	"category": "media",
+	"icon": "playlist-video",
+	"description": "Block for shorts",
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"default": ""
+		},
+		"category": {
+			"type": "string",
+			"default": ""
+		},
+		"selectedPosts": {
+			"type": "array",
+			"default": []
+		},
+		"showFilters": {
+			"type": "boolean",
+			"default": false
+		},
+		"selectedTaxonomies": {
+			"type": "array",
+			"default": []
+		},
+		"filterTaxonomies": {
+			"type": "array",
+			"default": []
+		},
+		"taxValues": {
+			"type": "array",
+			"default": []
+		},
+		"selectedTaxValues": {
+			"type": "array",
+			"default": []
+		},
+		"queryType": {
+			"type": "string",
+			"default": "chronological"
+		},
+		"postsPerPage": {
+			"type": "number",
+			"default": 6
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"order": {
+			"type": "string",
+			"default": "DESC"
+		},
+		"taxLoading": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "short-reels",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

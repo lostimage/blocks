@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "itm/poi-lists",
+	"title": "POI List",
+	"category": "itm-blocks",
+	"icon": "screenoptions",
+	"description": "Display a grid of filtered POI's.",
+	"textdomain": "itm",
+	"supports": {
+		"align": ["full", "wide"],
+		"spacing": {
+			"margin": ["top", "bottom"]
+		}
+	},
+	"attributes": {
+		"selectedPostType": {
+			"type": "string",
+			"default": "campsites"
+		},
+		"highlightedPOIs": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": [
+		"file:./index.css",
+		"file:./style-index.css"
+	],
+	"viewStyle": "file:./style-index.css",
+	"render": "file:../../src/poi-list/render.php"
+}
